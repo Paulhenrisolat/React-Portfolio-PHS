@@ -1,0 +1,16 @@
+.home{
+    background-color: darkgrey;
+    padding: 20px;
+}
+
+.home-title{
+    text-align: center;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 200px;
+    max-width: 100%;
+    overflow-x: auto;
+}

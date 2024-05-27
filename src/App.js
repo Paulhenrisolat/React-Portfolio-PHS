@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, useLocation } from 'react-router-dom';
+
+import './Css/app.css';
+import Home from './Pages/Home';
+import Navbar from './Components/Navbar';
+import Projects from './Pages/Projects';
 
 function App() {
+  const actualPage = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hey ! If it isn't my first React Website...
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {actualPage.pathname !=="/" && <Navbar/>}
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/projects" element={<Projects/>}/>
+    </Routes>
+    </>
+
   );
 }
 

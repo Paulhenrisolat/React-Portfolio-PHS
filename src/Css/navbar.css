@@ -1,0 +1,20 @@
+.navbar{
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+.activeLink{
+    font-weight: bold;
+    color: blue;
+}
