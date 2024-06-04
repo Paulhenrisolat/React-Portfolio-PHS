@@ -7,10 +7,14 @@
     text-align: center;
 }
 
+.home-desc{
+    text-align: center;
+}
+
 .home-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 200px;
-    max-width: 100%;
-    overflow-x: auto;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 400px);
+    justify-content: center;
+    gap: 50px;
 }

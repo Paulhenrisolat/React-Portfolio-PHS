@@ -1,17 +1,21 @@
 .navbar{
     font-size: 1.2em;
-    background-color: black;
+    background-color: rgb(53, 52, 52);
     color: white;
+    height: 50px;
 }
 
 ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 a{
     text-decoration: none;
+    color: aliceblue;
 }
 
 .activeLink{
