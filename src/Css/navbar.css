@@ -20,5 +20,7 @@ a{
 
 .activeLink{
     font-weight: bold;
-    color: blue;
+    text-shadow: 
+        0 0 0.5rem #c0c0c0,
+        0 0 1rem #ffffff;
 }

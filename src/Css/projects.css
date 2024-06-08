@@ -1,3 +1,12 @@
 .projects{
-    background-color: darkslategrey;
+    background-color: rgb(34, 34, 34);
+    align-content: flex-start;
+}
+
+.projects-grid{
+    padding: 30px;
+    display: grid;
+    background-color: rgb(49, 49, 49);
+    grid-template-columns: repeat(1, auto);
+    /*background: radial-gradient(circle, rgba(73,22,94,1)25%,rgba(0,0,0,1)100%);*/
 }
