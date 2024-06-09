@@ -13,9 +13,9 @@ function App() {
 
   return (
     <>
-    {actualPage.pathname !=="/" && <Navbar/>}
+    {actualPage.pathname !=="/React-Portfolio-PHS" && <Navbar/>}
     <Routes>
-      <Route path="/" element={<Home/>}/>
+      <Route path="/React-Portfolio-PHS" element={<Home/>}/>
       <Route path="/projects" element={<Projects/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/other" element={<Other/>}/>
