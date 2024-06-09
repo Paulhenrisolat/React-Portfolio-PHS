@@ -4,7 +4,7 @@ export default function ProjectItem({projectId,projectName, projectImg, projectD
     const basePath = "/React-Portfolio-PHS";
 
     return(
-        <NavLink to={`/project/${projectId}`} state={{projectName, projectImg, projectDesc, projectTech}}>
+        <NavLink to={`${basePath}/project/${projectId}`} state={{projectName, projectImg, projectDesc, projectTech}}>
             <div className="projectItem-grid">
                 <div className="projectItem-grid-item">
                     <h1>{projectName || 'Name-none'}</h1>
