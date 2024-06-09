@@ -10,16 +10,17 @@ import Other from './Pages/Other';
 
 function App() {
   const actualPage = useLocation();
+  const basePath = "/React-Portfolio-PHS";
 
   return (
     <>
-    {actualPage.pathname !=="/React-Portfolio-PHS" && <Navbar/>}
+    {actualPage.pathname !==`${basePath}/` && <Navbar/>}
     <Routes>
-      <Route path="/React-Portfolio-PHS" element={<Home/>}/>
-      <Route path="/projects" element={<Projects/>}/>
-      <Route path="/contact" element={<Contact/>}/>
-      <Route path="/other" element={<Other/>}/>
-      <Route path="/project/:id" element={<ProjectPage/>}/>
+      <Route path={`${basePath}/`} element={<Home/>}/>
+      <Route path={`${basePath}/projects`} element={<Projects/>}/>
+      <Route path={`${basePath}/contact`} element={<Contact/>}/>
+      <Route path={`${basePath}/other`} element={<Other/>}/>
+      <Route path={`${basePath}/project/:id`} element={<ProjectPage/>}/>
     </Routes>
     </>
 

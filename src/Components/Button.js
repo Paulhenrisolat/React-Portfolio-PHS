@@ -1,8 +1,10 @@
 import {NavLink} from 'react-router-dom';
 
 export default function Button({btnLink, btnTitle, btnImg, btnDesc}){
+    const basePath = "/React-Portfolio-PHS";
+    
     return(
-        <NavLink to={btnLink} className={({isActive})=>(isActive ? "activeLink" : undefined)}>
+        <NavLink to={`${basePath}${btnLink}`} className={({isActive})=>(isActive ? "activeLink" : undefined)}>
             <div className="button">
                 <div className='button-content'>
                     <h1 className='button-title'>{btnTitle}</h1>
