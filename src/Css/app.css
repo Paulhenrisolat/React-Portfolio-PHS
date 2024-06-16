@@ -3,3 +3,10 @@
 @import './projects.css';
 @import './button.css';
 @import './projectItem.css';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #222222; /* Couleur de fond souhaitée */
+}

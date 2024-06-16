@@ -1,6 +1,7 @@
 .projects{
     background-color: rgb(34, 34, 34);
     align-content: flex-start;
+    padding: 20px;
 }
 
 .projects-grid{

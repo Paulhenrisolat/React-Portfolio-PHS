@@ -16,7 +16,7 @@ export default function ProjectItem({projectId,projectName, projectImg, projectD
                     <h1>{projectDesc || 'Desc-none'}</h1>
                 </div>
                 <div className="projectItem-grid-item">
-                    <h1>{projectTech || 'Tech-none'}</h1>
+                    <h1>{projectTech.join(', ') || 'Tech-none'}</h1>
                 </div>
             </div>
         </NavLink>
