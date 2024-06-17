@@ -1,4 +1,5 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import './Css/app.css';
 import Home from './Pages/Home';
