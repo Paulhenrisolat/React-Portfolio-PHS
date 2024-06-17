@@ -1,6 +1,5 @@
-import { useLocation,useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
-import { useEffect } from 'react';
 
 import './Css/app.css';
 import Home from './Pages/Home';
@@ -15,11 +14,9 @@ function App() {
   const basePath = "/React-Portfolio-PHS";
   const newPath = basePath + "/#/React-Portfolio-PHS/";
 
-  useEffect(() => {
-    if (window.location.pathname === basePath && !window.location.hash.startsWith("#/")) {
-      window.location.replace(newPath);
-    }
-  }, [basePath, newPath]);
+  if (window.location.pathname === basePath && !window.location.hash.startsWith("#/")) {
+    window.location.replace(newPath);
+  }
 
   return (
     <>
