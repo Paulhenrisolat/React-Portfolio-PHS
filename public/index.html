@@ -16,8 +16,11 @@
       // Redirection Index
       window.onload = function() {
         var basePath = "/React-Portfolio-PHS";
-        if (window.location.pathname === basePath && !window.location.hash.startsWith("#/")) {
-          window.location.replace(`${basePath}/#/React-Portfolio-PHS/`);
+        if (window.location.pathname === basePath && !window.location.hash.startsWith("#/")) 
+        {
+          var newPath = basePath + "/#/React-Portfolio-PHS/";
+          console.log(`Redirection vers ${newPath}`);
+          window.location.replace(newPath);
         }
       };
     </script>
