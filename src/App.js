@@ -21,7 +21,7 @@ function App() {
   return (
     <>
     {actualPage.pathname !==`${basePath}/` && !actualPage.pathname.endsWith("/") && <Navbar/>}
-    {actualPage.pathname.endsWith("/") && <Home/>}
+    {actualPage.pathname !==`${basePath}/` && actualPage.pathname.endsWith("/") && <Home/>}
     <Routes>
       <Route path={`${basePath}/`} element={<Home/>}/>
       <Route path={`${basePath}/projects`} element={<Projects/>}/>
