@@ -34,7 +34,7 @@ export default function Projects(){
             </select>
             <div className='projects-grid'>
                 {filteredProjects.map((project, index)=>(
-                    <ProjectItem key={index} projectId={index} projectName={project.name} projectImg={project.img} projectDesc={project.desc} projectTech={project.tech}/>
+                    <ProjectItem key={index} projectId={index} projectName={project.name} projectImg={project.img[0]} projectDesc={project.desc} projectTech={project.tech}/>
                 ))}
             </div>
         </div>

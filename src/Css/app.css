@@ -3,6 +3,7 @@
 @import './projects.css';
 @import './button.css';
 @import './projectItem.css';
+@import './projectPage.css';
 
 body, html {
     margin: 0;

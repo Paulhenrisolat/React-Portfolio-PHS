@@ -1,0 +1,46 @@
+.projectTitle{
+    text-align: center;
+}
+
+.projectTech-grid{
+    text-align: center;
+    /*padding: 30px;*/
+    display: grid;
+    background-color: rgb(85, 85, 85);
+    grid-template-columns: repeat(1, auto);
+}
+
+.projectImg-grid{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+}
+
+.projectImg{
+    width: 250px;
+    height: 200px;
+}
+
+.projectImg-selected{
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 450px;
+    height: 400px;
+}
+
+.projectImg:hover{
+    background: rgb(8, 173, 82);
+    cursor: pointer;
+    transform: scale(0.9);
+    text-shadow: 0 0 0.5rem #fff;
+    box-shadow: 
+        0 0 0.5rem #26e66f,
+        0 0 1rem #adffb1,
+        0 0 1.5rem #65ff7a,
+        0 0 2.5rem #00ff0d;
+}
+
