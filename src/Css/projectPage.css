@@ -3,11 +3,15 @@
 }
 
 .projectTech-grid{
-    text-align: center;
-    /*padding: 30px;*/
+    justify-content: center;
+    padding: 30px;
     display: grid;
-    background-color: rgb(85, 85, 85);
-    grid-template-columns: repeat(1, auto);
+    background-color: rgb(49, 49, 49);
+    grid-template-columns: repeat(2, auto);
+}
+
+.projectDescription{
+    text-align: center;
 }
 
 .projectImg-grid{
@@ -28,8 +32,8 @@
 .projectImg-selected{
     grid-column: span 2;
     grid-row: span 2;
-    width: 450px;
-    height: 400px;
+    width: 510px;
+    height: 410px;
 }
 
 .projectImg:hover{

@@ -4,6 +4,7 @@
 @import './button.css';
 @import './projectItem.css';
 @import './projectPage.css';
+@import './techButton.css';
 
 body, html {
     margin: 0;

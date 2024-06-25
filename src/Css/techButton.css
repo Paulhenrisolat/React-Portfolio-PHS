@@ -1,0 +1,31 @@
+.techButton{
+
+}
+
+.techButton-logo{
+    /*scale: 0.1;*/
+    width: 50px;
+    height: 50px;
+}
+
+.techButton-grid{
+    display: grid;
+    background-color: rgb(44, 41, 41);
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    padding: 5px;
+    width: auto;
+}
+
+.techButton-item{
+    height: 50px;
+    width: 100px;
+    border: 2px black;
+    background-color: rgb(33, 33, 34);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
