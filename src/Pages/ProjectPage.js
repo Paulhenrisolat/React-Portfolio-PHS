@@ -24,6 +24,7 @@ export default function ProjectPage(){
             <div className='projectTech-grid'>
                 {projectTechs.map((tech, index) => (<TechButton key={index} name={tech}/>))}
             </div>
+            <h1 className="projectTitle">Click to zoom !</h1>
             <div className="projectImg-grid">
                 <img className="projectImg-selected" src={`${basePathImg}${imageSelected}`} alt="Selected" />
                 {projectImages.map((img, index) => (

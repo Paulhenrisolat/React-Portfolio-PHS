@@ -13,9 +13,11 @@ export default function TechButton({name}){
             <div className="techButton-item">
                 <h1>{techName || "NoTech"}</h1>
             </div>
+            {techLink && (
             <div className="techButton-item">
-                {techLink && <a href={techLink} target="_blank" rel="noopener noreferrer">Learn More</a>}
+                 <a href={techLink} target="_blank" rel="noopener noreferrer">Learn More</a>
             </div>
+            )}
         </div>
     )
 }
