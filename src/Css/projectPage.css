@@ -1,5 +1,23 @@
 .projectTitle{
     text-align: center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px black;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.centerTxt{
+    text-align: center;
+}
+
+.link{
+    color: #007006;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.link:hover{
+    cursor: pointer;
+    color: #00ff0d;
 }
 
 .projectTech-grid{
@@ -10,8 +28,23 @@
     grid-template-columns: repeat(2, auto);
 }
 
+.projectDescription-parent{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .projectDescription{
     text-align: center;
+    background-color: rgb(92, 92, 91);
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+.projectDescriptionTitle{
+    display: inline; 
+    background-color: rgb(92, 92, 91);
 }
 
 .projectImg-grid{

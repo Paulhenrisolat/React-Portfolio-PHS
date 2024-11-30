@@ -18,13 +18,23 @@ export default function ProjectPage(){
         setImageSelected(img);
     };
 
+    //Reformat \n in text for html
+    const formatTextWithBreaks = (text) => {
+        return text.split('\n').map((line, index) => (
+          <React.Fragment key={index}>
+            {line}
+            <br />
+          </React.Fragment>
+        ));
+      };
+
     return(
         <div className="">
             <h1 className="projectTitle">{projectName || 'No Project Name'}</h1>
             <div className='projectTech-grid'>
                 {projectTechs.map((tech, index) => (<TechButton key={index} name={tech}/>))}
             </div>
-            <h1 className="projectTitle">Click to zoom !</h1>
+            <h1 className="centerTxt">Click to zoom !</h1>
             <div className="projectImg-grid">
                 <img className="projectImg-selected" src={`${basePathImg}${imageSelected}`} alt="Selected" />
                 {projectImages.map((img, index) => (
@@ -32,12 +42,12 @@ export default function ProjectPage(){
                         onClick={() => handleImageClick(img)}/>
                 ))}
             </div>
-
-            <div className="projectDescription">
-                <h1>Description</h1>
-                <p>{projectDesc}</p>
+            <div className="projectDescription-parent">
+                <div className="projectDescription">
+                    <h1 className="projectDescriptionTitle">Description</h1>
+                    <p>{formatTextWithBreaks(projectDesc)}</p>
+                </div>
             </div>
-
         </div>
     )
 }
