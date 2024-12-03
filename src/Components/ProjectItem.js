@@ -7,7 +7,7 @@ export default function ProjectItem({projectId,projectName, projectImg, projectD
         <NavLink to={`${basePath}/project/${projectId}`} state={{projectName, projectImg, projectDesc, projectTech}}>
             <div className="projectItem-grid">
                 <div className="projectItem-grid-item">
-                    <h1>{projectName || 'Name-none'}</h1>
+                    <h1 className="projectTitle">{projectName || 'Name-none'}</h1>
                 </div>
                 <div className="projectItem-grid-item">
                     <img className='projectItem-image' src={`${basePathImg}${projectImg}`} alt="Img-none"/>
