@@ -27,10 +27,12 @@ export default function Projects(){
             <label htmlFor="techs">Tech:</label>
             <select name="techs" id="techs" value={searchTech} onChange={handleTechChange}>
                 <option value=""></option>
-                <option value="C#">C#</option>
                 <option value="Unity">Unity</option>
-                <option value="2D">2D</option>
-                <option value="3D">3D</option>
+                <option value="Love2D">Love2D</option>
+                <option value="SFML">SFML</option>
+                <option value="C#">C#</option>
+                <option value="C++">C++</option>
+                <option value="Lua">Lua</option>
             </select>
             <div className='projects-grid'>
                 {filteredProjects.map((project, index)=>(

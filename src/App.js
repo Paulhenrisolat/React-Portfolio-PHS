@@ -8,6 +8,7 @@ import Projects from './Pages/Projects';
 import ProjectPage from './Pages/ProjectPage';
 import Contact from './Pages/Contact';
 import Other from './Pages/Other';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   const actualPage = useLocation();
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <>
+    <ScrollToTop/>
     {actualPage.pathname !==`${basePath}/` && !actualPage.pathname.endsWith("/") && <Navbar/>}
     {actualPage.pathname !==`${basePath}/` && actualPage.pathname.endsWith("/") && <Home/>}
     <Routes>
