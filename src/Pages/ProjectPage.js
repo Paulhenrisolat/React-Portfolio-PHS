@@ -42,10 +42,23 @@ export default function ProjectPage(){
                         onClick={() => handleImageClick(img)}/>
                 ))}
             </div>
+
+            
             <div className="projectDescription-parent">
                 <div className="projectDescription">
                     <h1 className="projectDescriptionTitle">Description</h1>
                     <p>{formatTextWithBreaks(projectDesc)}</p>
+                </div>
+            </div>
+
+            <div className="projectDescription-parent">
+                <div className="projectDescription">
+                    <h1 className="projectDescriptionTitle">Vidéo</h1>
+                    <div>
+                     <iframe width="560" height="315" src={project.youtube} title="Project Video"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>

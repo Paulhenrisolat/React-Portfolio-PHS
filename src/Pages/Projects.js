@@ -26,13 +26,16 @@ export default function Projects(){
             <label htmlFor="search">Project name:</label><input type="search" id="search" value={searchInput} onChange={handleInputChange}/>
             <label htmlFor="techs">Tech:</label>
             <select name="techs" id="techs" value={searchTech} onChange={handleTechChange}>
-                <option value=""></option>
+                <option value="">All</option>
                 <option value="Unity">Unity</option>
                 <option value="Love2D">Love2D</option>
                 <option value="SFML">SFML</option>
                 <option value="C#">C#</option>
                 <option value="C++">C++</option>
                 <option value="Lua">Lua</option>
+                <option value="LyonPlex">LyonPlex</option>
+                <option value="DX12">DirectX12</option>
+                <option value="Monogame">Monogame</option>
             </select>
             <div className='projects-grid'>
                 {filteredProjects.map((project, index)=>(

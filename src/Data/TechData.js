@@ -20,6 +20,15 @@ const TechData = [
     {
         name: "SFML",logo: "Sfml-logo.png",link: "https://www.sfml-dev.org/index-fr.php"
     },
+    {
+        name: "Monogame",logo: "monogame-logo.png",link: "https://monogame.net"
+    },
+    {
+        name: "DX12",logo: "directx12-logo.png",link: "https://learn.microsoft.com/fr-fr/windows/win32/direct3d12/directx-12-programming-guide"
+    },
+    {
+        name: "LyonPlex",logo: "LyonPlex-logo.png",link: "https://paulhenrisolat.github.io/React-Portfolio-PHS/#/React-Portfolio-PHS/project/9"
+    },
 ]
 
 export default TechData
