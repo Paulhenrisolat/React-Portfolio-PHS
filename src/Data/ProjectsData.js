@@ -12,17 +12,17 @@ const ProjectsData = [
     {
         name: "CrazySpace", img: ["crazySpace1.png","crazySpace2.png","crazySpace3.png","crazySpace4.png"], minidesc: "2D space shooter", tech: ["Lua","Love2D"], 
         desc: "A space theme top down shooter game.\n You can go around on the 'map' while shooting avoiding or following ennemies.\n\n to simulate a freerom game without camera the enemies and background move instead of the actual player. (The effect work perfectly)\n\n Enemies move with a state machine",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        youtube: "https://www.youtube.com/embed/NPdJ2tqIFBk"
     },
     {
         name: "BloodyBrickBreaker", img: ["bbb4.png","bbb3.png","bbb5.png","bbb6.png","bbb7.png"], minidesc: "Brutal 2D Brick Breaker", tech: ["C++", "SFML"], 
         desc: "In B.B.B (Bloody Brick Breaker) you have to break every brick without dying.\n\n I created a particle manager ton enchance the bloody and graphic aspect of the game. (I also did all the pixel arts)",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        youtube: "https://www.youtube.com/embed/i_aD3qktwRM"
     },
     {
         name: "Pointless", img: ["pointless5.png","pointless1.png","pointless2.png","pointless4.png","pointless6.png","pointless7.png"], minidesc: "3D procedural infinite runner", tech: ["C#", "Unity"], 
         desc: "Pointless is a 3D infinite runner where the player plays a ball that must go the furthest possible.\n\n Only the difficulty varies depending on the mood of the entity in front of us!\n The more the entity is angry the more dificult platforms will be hard to pass.\n The player can collect orbs to influence the mood of the entity (Green = positive, purple = negative).\n\n The further the player travels, the more their speed increases.\n\n The player's life points are represented by a bar which breaks after 5 hits.\n Upon death, the player can save his score, and have a ranking with a TOP 3 of best players.",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        youtube: "https:/www.youtube.com/embed/gMmubesvTLE"
     },
     {
         name: "BreakableGod", img: ["breakableGod1.png","breakableGod4.png","breakableGod2.png","breakableGod3.png"], minidesc: "2D Boss Brick Breaker", tech: ["C#", "Love2D"], 
@@ -47,7 +47,7 @@ const ProjectsData = [
     {
         name: "LyonPlex", img: ["placeholder.png","placeholder.png","placeholder.png"], minidesc: "3D Custom Engine", tech: ["C++", "DX12"], 
         desc: "LyonPlex is a custom DirectX12 3D engine made with another programmer. He can be used to create scenes, import 3D meshes, make a game loop, making a simple UI and more...",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        youtube: "https://www.youtube.com/embed/kvvK-feCV0Q"
     },
     {
         name: "Armonizer", img: ["placeholder.png","placeholder.png","placeholder.png"], minidesc: "Adventure 2D 3D", tech: ["C++", "LyonPlex"], 
