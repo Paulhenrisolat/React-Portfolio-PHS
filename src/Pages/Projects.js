@@ -7,8 +7,9 @@ export default function Projects(){
     const[searchInput, setSearchInput] = useState('');
     const[searchTech, setSearchTech] = useState('');
 
+    const sanitizeSearch = (value) => value.replace(/[\/<>;"' ]/g, "");
     const handleInputChange = (inputChanged)=>{
-        setSearchInput(inputChanged.target.value)
+        setSearchInput(sanitizeSearch(inputChanged.target.value))
     };
     const handleTechChange = (techChanged)=>{
         setSearchTech(techChanged.target.value)

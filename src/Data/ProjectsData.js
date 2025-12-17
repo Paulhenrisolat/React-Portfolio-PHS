@@ -2,7 +2,7 @@ const ProjectsData = [
     {
         name: "MorbSurvival", img: ["morb1.gif","morb2.gif","morb3.gif","morb4.png","morb5.png","morb6.png"], minidesc: "Isometric multiplayer zombie survival", tech: ["C#", "Unity","Pun2"], 
         desc: "You are a little cube in a isometric 3D world, who protect the base with your friend.\n While infinite waves of blue jello zombie come's your way !\n\n Made with Unity and Pun2 (Photon) i made a multiplayer hosting game with an ennemie wave system, \n who spawn ennemies, check if there all alive, and if not go to the next wave and spawn more.",
-        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        youtube: "https://www.youtube.com/embed/TqrZ5B2ByKc"
     },
     {
         name: "IsometricBuilder", img: ["isometricBuilder3.png","isometricBuilder2.png","isometricBuilder3.png","isometricBuilder4.png","isometricBuilder5.png"], minidesc: "Template for isometric city builder", tech: ["C#", "Unity"], 
@@ -35,22 +35,22 @@ const ProjectsData = [
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
-        name: "GravityDisaster", img: ["placeholder.png","placeholder.png","placeholder.png"], minidesc: "3D Survival Minigame", tech: ["C#", "Unity"], 
+        name: "GravityDisaster", img: ["blackhole1.png","placeholder.png","placeholder.png"], minidesc: "3D Survival Minigame", tech: ["C#", "Unity"], 
         desc: "Survive a black hole disaster in a destructible town.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
-        name: "SlightHorror&Beats", img: ["placeholder.png","placeholder.png","placeholder.png"], minidesc: "2D Rythme Horror", tech: ["C#", "Unity"], 
+        name: "SlightHorror&Beats", img: ["horrorBeat1.png","horrorBeat2.png","placeholder.png"], minidesc: "2D Rythme Horror", tech: ["C#", "Unity"], 
         desc: "A rythm platformer with slight horror elements.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
-        name: "LyonPlex", img: ["placeholder.png","placeholder.png","placeholder.png"], minidesc: "3D Custom Engine", tech: ["C++", "DX12"], 
+        name: "LyonPlex", img: ["LyonPlex-logo.png","lyonplex1.png","lyonplex6.png","lyonplex3.png","lyonplex4.png","lyonplex5.png"], minidesc: "3D Custom Engine", tech: ["C++", "DX12"], 
         desc: "LyonPlex is a custom DirectX12 3D engine made with another programmer. He can be used to create scenes, import 3D meshes, make a game loop, making a simple UI and more...",
         youtube: "https://www.youtube.com/embed/kvvK-feCV0Q"
     },
     {
-        name: "Armonizer", img: ["placeholder.png","placeholder.png","placeholder.png"], minidesc: "Adventure 2D 3D", tech: ["C++", "LyonPlex"], 
+        name: "Armonizer", img: ["armonizer1.png","armonizer2.png","armonizer3.png","armonizer4.png","armonizer5.png","armonizer6.png"], minidesc: "Adventure 2D 3D", tech: ["C++", "LyonPlex"], 
         desc: "The Armonizer is the first game made with LyonPlex (Our custom 3D engine). You can pick 3D object and transform them into different 2D weapon.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
