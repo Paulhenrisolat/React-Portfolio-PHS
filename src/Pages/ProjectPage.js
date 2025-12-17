@@ -53,11 +53,17 @@ export default function ProjectPage(){
 
             <div className="projectDescription-parent">
                 <div className="projectDescription">
-                    <h1 className="projectDescriptionTitle">Vidéo</h1>
+                    <h1 className="projectDescriptionTitle">Video</h1>
                     <div>
-                     <iframe width="560" height="315" src={project.youtube} title="Project Video"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen></iframe>
+                        {project.youtube ? (
+                            <iframe
+                                width="560"
+                                height="315"
+                                src={project.youtube}
+                                title="Project Video"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen/>
+                        ) : (<p className="centerTxt">Coming Soon</p>)}
                     </div>
                 </div>
             </div>

@@ -2,12 +2,12 @@ const ProjectsData = [
     {
         name: "MorbSurvival", img: ["morb1.gif","morb2.gif","morb3.gif","morb4.png","morb5.png","morb6.png"], minidesc: "Isometric multiplayer zombie survival", tech: ["C#", "Unity","Pun2"], 
         desc: "You are a little cube in a isometric 3D world, who protect the base with your friend.\n While infinite waves of blue jello zombie come's your way !\n\n Made with Unity and Pun2 (Photon) i made a multiplayer hosting game with an ennemie wave system, \n who spawn ennemies, check if there all alive, and if not go to the next wave and spawn more.",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
         name: "IsometricBuilder", img: ["isometricBuilder3.png","isometricBuilder2.png","isometricBuilder3.png","isometricBuilder4.png","isometricBuilder5.png"], minidesc: "Template for isometric city builder", tech: ["C#", "Unity"], 
         desc: "A Unity template to create isometric city builder game with 2D sprites in Unity.\n\n I made this to gain time on future projects.",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
         name: "CrazySpace", img: ["crazySpace1.png","crazySpace2.png","crazySpace3.png","crazySpace4.png"], minidesc: "2D space shooter", tech: ["Lua","Love2D"], 
@@ -27,22 +27,22 @@ const ProjectsData = [
     {
         name: "BreakableGod", img: ["breakableGod1.png","breakableGod4.png","breakableGod2.png","breakableGod3.png"], minidesc: "2D Boss Brick Breaker", tech: ["C#", "Love2D"], 
         desc: "In this simple brick breaker you do damage to a boss made with the brick,\n so you don't need to break all the bricks but bring the life of the boss's go down to zero.",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
         name: "CreateEarth", img: ["createEarth4.png","createEarthV2-3.png","createEarth4.png","createEarth5.png","createEarth6.png","createEarth2.png"], minidesc: "3D futuristic enigma adventure", tech: ["C#", "Unity"], 
         desc: "You are a technician inside the massivly huge spaceship 'NamePending' and beacause of a too long mission you are now alone.\n\n The mission : Create an artificial earth with the ship equipements and some coder skills ! \n Find the left notes of the crew and code to advance the game.",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
         name: "GravityDisaster", img: ["placeholder.png","placeholder.png","placeholder.png"], minidesc: "3D Survival Minigame", tech: ["C#", "Unity"], 
         desc: "Survive a black hole disaster in a destructible town.",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
         name: "SlightHorror&Beats", img: ["placeholder.png","placeholder.png","placeholder.png"], minidesc: "2D Rythme Horror", tech: ["C#", "Unity"], 
         desc: "A rythm platformer with slight horror elements.",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
         name: "LyonPlex", img: ["placeholder.png","placeholder.png","placeholder.png"], minidesc: "3D Custom Engine", tech: ["C++", "DX12"], 
@@ -52,7 +52,7 @@ const ProjectsData = [
     {
         name: "Armonizer", img: ["placeholder.png","placeholder.png","placeholder.png"], minidesc: "Adventure 2D 3D", tech: ["C++", "LyonPlex"], 
         desc: "The Armonizer is the first game made with LyonPlex (Our custom 3D engine). You can pick 3D object and transform them into different 2D weapon.",
-        youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
 ]
 
