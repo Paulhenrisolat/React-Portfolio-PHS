@@ -1,8 +1,11 @@
 import { useLocation } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState , Suspense, lazy } from "react";
 
 import ProjectsData from "../Data/ProjectsData";
 import TechButton from "../Components/TechButton";
+
+// Lazy load du composant Unity
+const UnityPlay = lazy(() => import("../Components/UnityPlay"));
 
 export default function ProjectPage(){
     const location = useLocation();
@@ -11,7 +14,12 @@ export default function ProjectPage(){
     const basePathImg = "/React-Portfolio-PHS/Images/";
 
     const project = ProjectsData.find(p => p.name === projectName);
-    const { img: projectImages, desc: projectDesc, tech: projectTechs } = project;
+
+   // Ajout minimal ici : destructure unity + garder les autres champs
+    const { img: projectImages, desc: projectDesc, tech: projectTechs, unity } = project;
+    
+    // Ajout minimal : état pour afficher le jeu
+    const [showGame, setShowGame] = useState(false);
 
     const [imageSelected, setImageSelected] = useState(projectImages[0]);
     const handleImageClick = (img) => {
@@ -67,6 +75,24 @@ export default function ProjectPage(){
                     </div>
                 </div>
             </div>
+
+            {/* ---------------- Unity Game ---------------- */}
+            {unity && (
+                <div className="projectDescription-parent">
+                    <div className="projectDescription">
+                        <h1 className="projectDescriptionTitle">Play Game</h1>
+                        {!showGame && (
+                            <button onClick={() => setShowGame(true)}>▶ Launch Game</button>
+                        )}
+                        {showGame && (
+                            <Suspense fallback={<p>Loading game...</p>}>
+                                <UnityPlay unity={unity} />
+                            </Suspense>
+                        )}
+                    </div>
+                </div>
+            )}
+
         </div>
     )
 }

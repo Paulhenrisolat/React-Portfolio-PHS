@@ -42,6 +42,14 @@ const ProjectsData = [
     {
         name: "SlightHorror&Beats", img: ["horrorBeat1.png","horrorBeat2.png","placeholder.png"], minidesc: "2D Rythme Horror", tech: ["C#", "Unity"], 
         desc: "A rythm platformer with slight horror elements.",
+        unity: {
+                loaderUrl: "unity/WebTest/Build/WebTest.loader.js",
+                dataUrl: "unity/WebTest/Build/WebTest.data",
+                frameworkUrl: "unity/WebTest/Build/WebTest.framework.js",
+                codeUrl: "unity/WebTest/Build/WebTest.wasm",
+                width: 960,
+                height: 600
+                },
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
