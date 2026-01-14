@@ -1,4 +1,3 @@
-// src/Components/UnityPlay.jsx
 import React, { useEffect, useRef } from "react";
 
 export default function UnityPlay({ unity }) {
@@ -6,7 +5,6 @@ export default function UnityPlay({ unity }) {
   const unityInstanceRef = useRef(null);
   const scriptRef = useRef(null);
 
-  // ⚠️ Tous les Hooks sont appelés avant tout return
   const showUnity = !!(unity && unity.buildPath);
 
   // chemins pour Unity
@@ -58,6 +56,9 @@ export default function UnityPlay({ unity }) {
           unityInstanceRef.current = instance;
           const fsBtn = document.getElementById("unity-fullscreen-button");
           if (fsBtn) fsBtn.onclick = () => instance.SetFullscreen(1);
+          
+            //wait x seconds before scrolling down
+            setTimeout(() => {window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" }); }, 800);
         })
         .catch((err) => {
           console.error("createUnityInstance failed:", err);
@@ -81,16 +82,15 @@ export default function UnityPlay({ unity }) {
     };
   }, [showUnity, loaderUrl, dataUrl, frameworkUrl, codeUrl, unity, prefix]);
 
-  // ⚠️ return conditionnel seulement **après** les Hooks
   if (!showUnity) return null;
 
   return (
     <div style={{ textAlign: "center" }}>
       <canvas
         id={canvasId}
-        width={unity.width || 960}
-        height={unity.height || 600}
-        style={{ maxWidth: "100%", border: "1px solid #000" }}
+        width={200}
+        height={200}
+        style={{ border: "1px solid #000", maxWidth: "960px", maxHeight: "600px", width: "100%", height: "auto" }}
       />
       <div id="unity-loading-bar" style={{ width: "100%", marginTop: 6 }}>
         <div id="unity-progress-bar-full" style={{ width: "0%", height: 6 }} />

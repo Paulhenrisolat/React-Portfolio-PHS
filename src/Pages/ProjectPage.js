@@ -88,10 +88,10 @@ export default function ProjectPage() {
         <div className="projectDescription-parent">
           <div className="projectDescription">
             <h1 className="projectDescriptionTitle">Play Game</h1>
-            {!showGame && (
-              <button onClick={() => setShowGame(true)}>▶ Launch Game</button>
-            )}
+            <p></p>
+            {!showGame && ( <button onClick={() => setShowGame(true)}>▶ Launch Game</button>)}
             {showGame && <UnityPlay unity={unity} />}
+            <p></p>
           </div>
         </div>
       )}
