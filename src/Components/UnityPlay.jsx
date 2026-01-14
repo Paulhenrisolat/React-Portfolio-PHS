@@ -1,19 +1,16 @@
-import { Unity, useUnityContext } from "react-unity-webgl";
-
-const UnityPlay = ({ unity }) => {
-  const { unityProvider, loadingProgression } = useUnityContext({
-    loaderUrl: unity.loaderUrl,
-    dataUrl: unity.dataUrl,
-    frameworkUrl: unity.frameworkUrl,
-    codeUrl: unity.codeUrl
-  });
-
+export default function UnityPlay({ unity }) {
   return (
-    <div>
-      <p>Loading: {(loadingProgression * 100).toFixed(0)}%</p>
-      <Unity unityProvider={unityProvider} style={{ width: unity.width || 800, height: unity.height || 600 }} />
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <iframe
+        src={`${process.env.PUBLIC_URL}/${unity.url}`}
+        width={unity.width}
+        height={unity.height}
+        style={{
+          border: "none",
+          maxWidth: "100%",
+        }}
+        title="Unity WebGL"
+      />
     </div>
   );
-};
-
-export default UnityPlay;
+}
