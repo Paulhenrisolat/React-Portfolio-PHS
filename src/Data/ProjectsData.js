@@ -43,7 +43,7 @@ const ProjectsData = [
         name: "SlightHorror&Beats", img: ["horrorBeat1.png","horrorBeat2.png","placeholder.png"], minidesc: "2D Rythme Horror", tech: ["C#", "Unity"], 
         desc: "A rythm platformer with slight horror elements.",
         unity: {
-                buildPath: "unity/WebTest/index.html",
+                buildPath: "Unity/WebTest/index.html",
                 width: 960,
                 height: 600
                 },

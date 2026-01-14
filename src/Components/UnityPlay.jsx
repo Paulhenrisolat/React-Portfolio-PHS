@@ -2,28 +2,24 @@
 import React, { useEffect, useRef } from "react";
 
 export default function UnityPlay({ unity }) {
-  // ⚠️ Hooks toujours au début
   const canvasId = "unity-canvas";
   const unityInstanceRef = useRef(null);
   const scriptRef = useRef(null);
 
-  // sécurité : on ne fera rien si pas d'unity ou pas de buildPath
+  // ⚠️ Tous les Hooks sont appelés avant tout return
   const showUnity = !!(unity && unity.buildPath);
 
-  // calculs pour Unity
+  // chemins pour Unity
   const folderWithoutIndex = showUnity
     ? unity.buildPath.replace(/\/index\.html$/, "").replace(/\/$/, "")
     : "";
   const prefix = showUnity ? folderWithoutIndex.split("/").pop() : "";
-  const base = (process.env.PUBLIC_URL || "").replace(/\/$/, "");
-  const buildFolder = showUnity
-    ? `${base}/${folderWithoutIndex}/Build`.replace(/\/\/+/g, "/")
-    : "";
+  const buildFolder = showUnity ? `${folderWithoutIndex}/Build` : "";
 
-  const loaderUrl = showUnity ? `${buildFolder}/${prefix}.loader.js`.replace(/\/\/+/g, "/") : "";
-  const dataUrl = showUnity ? `${buildFolder}/${prefix}.data`.replace(/\/\/+/g, "/") : "";
-  const frameworkUrl = showUnity ? `${buildFolder}/${prefix}.framework.js`.replace(/\/\/+/g, "/") : "";
-  const codeUrl = showUnity ? `${buildFolder}/${prefix}.wasm`.replace(/\/\/+/g, "/") : "";
+  const loaderUrl = showUnity ? `${buildFolder}/${prefix}.loader.js` : "";
+  const dataUrl = showUnity ? `${buildFolder}/${prefix}.data` : "";
+  const frameworkUrl = showUnity ? `${buildFolder}/${prefix}.framework.js` : "";
+  const codeUrl = showUnity ? `${buildFolder}/${prefix}.wasm` : "";
 
   useEffect(() => {
     if (!showUnity) return;
@@ -44,7 +40,7 @@ export default function UnityPlay({ unity }) {
 
     let mounted = true;
 
-    // inject loader script
+    // inject loader
     scriptRef.current = document.createElement("script");
     scriptRef.current.src = loaderUrl;
     scriptRef.current.async = true;
@@ -85,7 +81,7 @@ export default function UnityPlay({ unity }) {
     };
   }, [showUnity, loaderUrl, dataUrl, frameworkUrl, codeUrl, unity, prefix]);
 
-  // rendu
+  // ⚠️ return conditionnel seulement **après** les Hooks
   if (!showUnity) return null;
 
   return (
