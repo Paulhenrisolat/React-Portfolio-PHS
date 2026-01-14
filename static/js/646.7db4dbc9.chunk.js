@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_portfoliophs=self.webpackChunkreact_portfoliophs||[]).push([[646],{646:(t,e,i)=>{i.r(e),i.d(e,{default:()=>n});var r=i(579);function n(t){let{unity:e}=t;return(0,r.jsx)("div",{style:{display:"flex",justifyContent:"center"},children:(0,r.jsx)("iframe",{src:"".concat("/React-Portfolio-PHS","/").concat(e.url),width:e.width,height:e.height,style:{border:"none",maxWidth:"100%"},title:"Unity WebGL"})})}}}]);
+//# sourceMappingURL=646.7db4dbc9.chunk.js.map
