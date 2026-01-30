@@ -56,6 +56,16 @@ const ProjectsData = [
         name: "Armonizer", img: ["armonizer1.png","armonizer2.png","armonizer3.png","armonizer4.png","armonizer5.png","armonizer6.png"], minidesc: "Adventure 2D 3D", tech: ["C++", "LyonPlex"], 
         desc: "The Armonizer is the first game made with LyonPlex (Our custom 3D engine). You can pick 3D object and transform them into different 2D weapon.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+    },    
+    {
+        name: "KarakSceneBTN", img: ["sb5.gif","sb1.png","sb2.png","sb3.png","sb4.png"], minidesc: "Tool for changing scene easily", tech: ["C#", "Unity"], 
+        desc: "To improve time on my future Unity projects I made different custom packages, this is one of them.\n\nThis package provides the user with a simple button which will open a dropdown list of all the scene Built-in the project. (to make a scene appear in the list you have to 'add the scene' in the project).\n With this package i don't have to worry about moving to another scene in term of coding or time wasted for this.\n The context more likely to be used with is simple managing games and phone apps.",
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+    },
+        {
+        name: "KarakTask", img: ["placeholder.png","placeholder.png"], minidesc: "Tool for managing tasks", tech: ["C#", "Unity"], 
+        desc: "To improve time on my future Unity projects I made different custom packages, this is one of them.\n\nThis packgage provide a way to keep track of tasks looping(or not) in the background. The main purpose is to change numerical values over time and after a task is finished she can be set to loop and going infinitly if wanted, or just a way to make or craft an object in game that need time to do. A task (making something or generating value overtime).",
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
 ]
 
