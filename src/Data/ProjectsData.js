@@ -5,6 +5,16 @@ const ProjectsData = [
         youtube: "https://www.youtube.com/embed/TqrZ5B2ByKc"
     },
     {
+        name: "BeeFactory", img: ["bee1.png","bee2.jpg","bee3.jpg",], minidesc: "2D Gacha Factory", tech: ["C#", "Unity"], 
+        desc: "Want to make profit by selling honey ?\n Here is a fusion between Gacha and factorySimulator !\n\n Get various bees, make honey, upgrade them or you'r equipments, then sell even more honey !",
+        //youtube: "https://www.youtube.com/embed/TqrZ5B2ByKc"
+    },
+    {
+        name: "BloodyBrickBreaker", img: ["bbb4.png","bbb3.png","bbb5.png","bbb6.png","bbb7.png"], minidesc: "Brutal 2D Brick Breaker", tech: ["C++", "SFML"], 
+        desc: "In B.B.B (Bloody Brick Breaker) you have to break every brick without dying.\n\n I created a particle manager ton enchance the bloody and graphic aspect of the game. (I also did all the pixel arts)",
+        youtube: "https://www.youtube.com/embed/i_aD3qktwRM"
+    },
+        {
         name: "IsometricBuilder", img: ["isometricBuilder3.png","isometricBuilder2.png","isometricBuilder3.png","isometricBuilder4.png","isometricBuilder5.png"], minidesc: "Template for isometric city builder", tech: ["C#", "Unity"], 
         desc: "A Unity template to create isometric city builder game with 2D sprites in Unity.\n\n I made this to gain time on future projects.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
@@ -13,11 +23,6 @@ const ProjectsData = [
         name: "CrazySpace", img: ["crazySpace1.png","crazySpace2.png","crazySpace3.png","crazySpace4.png"], minidesc: "2D space shooter", tech: ["Lua","Love2D"], 
         desc: "A space theme top down shooter game.\n You can go around on the 'map' while shooting avoiding or following ennemies.\n\n to simulate a freerom game without camera the enemies and background move instead of the actual player. (The effect work perfectly)\n\n Enemies move with a state machine",
         youtube: "https://www.youtube.com/embed/NPdJ2tqIFBk"
-    },
-    {
-        name: "BloodyBrickBreaker", img: ["bbb4.png","bbb3.png","bbb5.png","bbb6.png","bbb7.png"], minidesc: "Brutal 2D Brick Breaker", tech: ["C++", "SFML"], 
-        desc: "In B.B.B (Bloody Brick Breaker) you have to break every brick without dying.\n\n I created a particle manager ton enchance the bloody and graphic aspect of the game. (I also did all the pixel arts)",
-        youtube: "https://www.youtube.com/embed/i_aD3qktwRM"
     },
     {
         name: "Pointless", img: ["pointless5.png","pointless1.png","pointless2.png","pointless4.png","pointless6.png","pointless7.png"], minidesc: "3D procedural infinite runner", tech: ["C#", "Unity"], 
