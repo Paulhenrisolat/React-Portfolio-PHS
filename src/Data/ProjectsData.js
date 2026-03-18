@@ -25,11 +25,6 @@ const ProjectsData = [
         youtube: "https://www.youtube.com/embed/NPdJ2tqIFBk"
     },
     {
-        name: "Pointless", img: ["pointless5.png","pointless1.png","pointless2.png","pointless4.png","pointless6.png","pointless7.png"], minidesc: "3D procedural infinite runner", tech: ["C#", "Unity"], 
-        desc: "Pointless is a 3D infinite runner where the player plays a ball that must go the furthest possible.\n\n Only the difficulty varies depending on the mood of the entity in front of us!\n The more the entity is angry the more dificult platforms will be hard to pass.\n The player can collect orbs to influence the mood of the entity (Green = positive, purple = negative).\n\n The further the player travels, the more their speed increases.\n\n The player's life points are represented by a bar which breaks after 5 hits.\n Upon death, the player can save his score, and have a ranking with a TOP 3 of best players.",
-        youtube: "https:/www.youtube.com/embed/gMmubesvTLE"
-    },
-    {
         name: "BreakableGod", img: ["breakableGod1.png","breakableGod4.png","breakableGod2.png","breakableGod3.png"], minidesc: "2D Boss Brick Breaker", tech: ["C#", "Love2D"], 
         desc: "In this simple brick breaker you do damage to a boss made with the brick,\n so you don't need to break all the bricks but bring the life of the boss's go down to zero.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
@@ -47,10 +42,8 @@ const ProjectsData = [
     {
         name: "SlightHorror&Beats", img: ["horrorBeat1.png","horrorBeat2.png","placeholder.png"], minidesc: "2D Rythme Horror", tech: ["C#", "Unity"], 
         desc: "A rythm platformer with slight horror elements.",
-        unity: {
-                buildPath: "Unity/WebTest/index.html"
-                },
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+        unity: { buildPath: "Unity/WebTest/index.html" },
     },
     {
         name: "LyonPlex", img: ["LyonPlex-logo.png","lyonplex1.png","lyonplex6.png","lyonplex3.png","lyonplex4.png","lyonplex5.png"], minidesc: "3D Custom Engine", tech: ["C++", "DX12"], 
@@ -67,9 +60,19 @@ const ProjectsData = [
         desc: "To improve time on my future Unity projects I made different custom packages, this is one of them.\n\nThis package provides the user with a simple button which will open a dropdown list of all the scene Built-in the project. (to make a scene appear in the list you have to 'add the scene' in the project).\n With this package i don't have to worry about moving to another scene in term of coding or time wasted for this.\n The context more likely to be used with is simple managing games and phone apps.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
-        {
+    {
         name: "KarakTask", img: ["placeholder.png","placeholder.png"], minidesc: "Tool for managing tasks", tech: ["C#", "Unity"], 
         desc: "To improve time on my future Unity projects I made different custom packages, this is one of them.\n\nThis packgage provide a way to keep track of tasks looping(or not) in the background. The main purpose is to change numerical values over time and after a task is finished she can be set to loop and going infinitly if wanted, or just a way to make or craft an object in game that need time to do. A task (making something or generating value overtime).",
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+    },
+    {
+        name: "Pointless", img: ["pointless5.png","pointless1.png","pointless2.png","pointless4.png","pointless6.png","pointless7.png"], minidesc: "3D procedural infinite runner", tech: ["C#", "Unity"], 
+        desc: "Pointless is a 3D infinite runner where the player plays a ball that must go the furthest possible.\n\n Only the difficulty varies depending on the mood of the entity in front of us!\n The more the entity is angry the more dificult platforms will be hard to pass.\n The player can collect orbs to influence the mood of the entity (Green = positive, purple = negative).\n\n The further the player travels, the more their speed increases.\n\n The player's life points are represented by a bar which breaks after 5 hits.\n Upon death, the player can save his score, and have a ranking with a TOP 3 of best players.",
+        youtube: "https://www.youtube.com/embed/gMmubesvTLE"
+    },    
+    {
+        name: "Portfolio", img: ["po1.png","po2.png","po3.png"], minidesc: "This website where you are right now", tech: ["Js", "React"], 
+        desc: "In my life as a developper I made a ton of different version of portfolio, using various langage or hosting platform.\n\n So to showcase easely my projects without spending any money at all and fast to update,\n I decided to host a React.Js app on Github.io.\n\n Why React ? Well since I was looking for a simple way to add muliple projects without thinking about it,\n It was pretty practical to use re-usable components and page prefabs.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
 ]

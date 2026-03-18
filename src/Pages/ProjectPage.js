@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import ProjectsData from "../Data/ProjectsData";
 import TechButton from "../Components/TechButton";
-import UnityPlay from "../Components/UnityPlay"; // <-- notre nouveau composant
+import UnityPlay from "../Components/UnityPlay";
 
 export default function ProjectPage() {
   const location = useLocation();

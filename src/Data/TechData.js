@@ -9,13 +9,19 @@ const TechData = [
         name: "C++",logo: "Cplusplus-logo.png",link: "https://en.wikipedia.org/wiki/C%2B%2B"
     },
     {
+        name: "Js",logo: "js-logo.png",link: "https://developer.mozilla.org/fr/docs/Web/JavaScript"
+    },
+    {
+        name: "React",logo: "react-logo.png",link: "https://react.dev"
+    },
+    {
         name: "Pun2",logo: "logoPun2.png",link: "https://www.photonengine.com/pun"
     },
     {
         name: "Lua",logo: "Lua-Logo.png",link: "https://www.lua.org"
     },
     {
-        name: "Love2D",logo: "Love2d-Logo.png",link: "https://love2d.org"
+        name: "Love2D",logo: "Love2d-logo.png",link: "https://love2d.org"
     },
     {
         name: "SFML",logo: "Sfml-logo.png",link: "https://www.sfml-dev.org/index-fr.php"
