@@ -6,12 +6,12 @@ const ProjectsData = [
     },
     {
         name: "BeeFactory", img: ["bee1.png","bee2.jpg","bee3.jpg",], minidesc: "2D Gacha Factory", tech: ["C#", "Unity"], 
-        desc: "Want to make profit by selling honey ?\n Here is a fusion between Gacha and factorySimulator !\n\n Get various bees, make honey, upgrade them or you'r equipments, then sell even more honey !",
+        desc: "Want to make profit by selling honey ?\n Here is a fusion between Gacha and factorySimulator !\n\n Get various bees, make honey, upgrade them or your equipments, then sell even more honey !",
         //youtube: "https://www.youtube.com/embed/TqrZ5B2ByKc"
     },
     {
         name: "BloodyBrickBreaker", img: ["bbb4.png","bbb3.png","bbb5.png","bbb6.png","bbb7.png"], minidesc: "Brutal 2D Brick Breaker", tech: ["C++", "SFML"], 
-        desc: "In B.B.B (Bloody Brick Breaker) you have to break every brick without dying.\n\n I created a particle manager ton enchance the bloody and graphic aspect of the game. (I also did all the pixel arts)",
+        desc: "In B.B.B (Bloody Brick Breaker) you have to break every brick without dying.\n\n I created a particle manager ton enhance the bloody and graphic aspect of the game. (I also did all the pixel arts)",
         youtube: "https://www.youtube.com/embed/i_aD3qktwRM"
     },
         {
@@ -21,7 +21,7 @@ const ProjectsData = [
     },
     {
         name: "CrazySpace", img: ["crazySpace1.png","crazySpace2.png","crazySpace3.png","crazySpace4.png"], minidesc: "2D space shooter", tech: ["Lua","Love2D"], 
-        desc: "A space theme top down shooter game.\n You can go around on the 'map' while shooting avoiding or following ennemies.\n\n to simulate a freerom game without camera the enemies and background move instead of the actual player. (The effect work perfectly)\n\n Enemies move with a state machine",
+        desc: "A space theme top down shooter game.\n You can go around on the 'map' while shooting avoiding or following enemies.\n\n to simulate a freerom game without camera the enemies and background move instead of the actual player. (The effect work perfectly)\n\n Enemies move with a state machine",
         youtube: "https://www.youtube.com/embed/NPdJ2tqIFBk"
     },
     {
@@ -31,7 +31,7 @@ const ProjectsData = [
     },
     {
         name: "CreateEarth", img: ["createEarth4.png","createEarthV2-3.png","createEarth4.png","createEarth5.png","createEarth6.png","createEarth2.png"], minidesc: "3D futuristic enigma adventure", tech: ["C#", "Unity"], 
-        desc: "You are a technician inside the massivly huge spaceship 'NamePending' and beacause of a too long mission you are now alone.\n\n The mission : Create an artificial earth with the ship equipements and some coder skills ! \n Find the left notes of the crew and code to advance the game.",
+        desc: "You are a technician inside the massivly huge spaceship 'NamePending' and because of a too long mission you are now alone.\n\n The mission : Create an artificial earth with the ship equipements and some coder skills ! \n Find the left notes of the crew and code to advance the game.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
@@ -62,16 +62,21 @@ const ProjectsData = [
     },
     {
         name: "KarakTask", img: ["placeholder.png","placeholder.png"], minidesc: "Tool for managing tasks", tech: ["C#", "Unity"], 
-        desc: "To improve time on my future Unity projects I made different custom packages, this is one of them.\n\nThis packgage provide a way to keep track of tasks looping(or not) in the background. The main purpose is to change numerical values over time and after a task is finished she can be set to loop and going infinitly if wanted, or just a way to make or craft an object in game that need time to do. A task (making something or generating value overtime).",
+        desc: "To improve time on my future Unity projects I made different custom packages, this is one of them.\n\nThis package provide a way to keep track of tasks looping(or not) in the background. The main purpose is to change numerical values over time and after a task is finished she can be set to loop and going infinitely if wanted, or just a way to make or craft an object in game that need time to do. A task (making something or generating value overtime).",
+        //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
+    },
+    {
+        name: "KarakSkillTree", img: ["placeholder.png","placeholder.png"], minidesc: "Tool for creating dynamic SkillTree", tech: ["C#", "Unity"],
+        desc: "To improve time on my future Unity projects I made different custom packages, this is one of them.\n\nThis package provide a way to create a skill tree, and adding any type of skills, variables to increase. The main purpose is to change numerical values with a level system and skill points too boost the player over time.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },
     {
         name: "Pointless", img: ["pointless5.png","pointless1.png","pointless2.png","pointless4.png","pointless6.png","pointless7.png"], minidesc: "3D procedural infinite runner", tech: ["C#", "Unity"], 
-        desc: "Pointless is a 3D infinite runner where the player plays a ball that must go the furthest possible.\n\n Only the difficulty varies depending on the mood of the entity in front of us!\n The more the entity is angry the more dificult platforms will be hard to pass.\n The player can collect orbs to influence the mood of the entity (Green = positive, purple = negative).\n\n The further the player travels, the more their speed increases.\n\n The player's life points are represented by a bar which breaks after 5 hits.\n Upon death, the player can save his score, and have a ranking with a TOP 3 of best players.",
+        desc: "Pointless is a 3D infinite runner where the player plays a ball that must go the furthest possible.\n\n Only the difficulty varies depending on the mood of the entity in front of us!\n The more the entity is angry the more difficult platforms will be hard to pass.\n The player can collect orbs to influence the mood of the entity (Green = positive, purple = negative).\n\n The further the player travels, the more their speed increases.\n\n The player's life points are represented by a bar which breaks after 5 hits.\n Upon death, the player can save his score, and have a ranking with a TOP 3 of best players.",
         youtube: "https://www.youtube.com/embed/gMmubesvTLE"
     },    
     {
-        name: "Portfolio", img: ["po1.png","po2.png","po3.png"], minidesc: "This website where you are right now", tech: ["Js", "React"], 
+        name: "Portfolio", img: ["po1.png","po2.png","po3.png"], minidesc: "This website where you are right now", tech: ["Js", "React"],
         desc: "In my life as a developper I made a ton of different version of portfolio, using various langage or hosting platform.\n\n So to showcase easely my projects without spending any money at all and fast to update,\n I decided to host a React.Js app on Github.io.\n\n Why React ? Well since I was looking for a simple way to add muliple projects without thinking about it,\n It was pretty practical to use re-usable components and page prefabs.",
         //youtube: "https://www.youtube.com/embed/u5NqO2v_xnY"
     },

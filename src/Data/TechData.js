@@ -12,6 +12,9 @@ const TechData = [
         name: "Js",logo: "js-logo.png",link: "https://developer.mozilla.org/fr/docs/Web/JavaScript"
     },
     {
+        name: "Java",logo: "Java-logo.png",link: "https://www.java.com/fr/"
+    },
+    {
         name: "React",logo: "react-logo.png",link: "https://react.dev"
     },
     {
