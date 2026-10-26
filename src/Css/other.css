@@ -1,0 +1,133 @@
+.other-page {
+    padding: 24px;
+}
+
+/* Grid: "dense" lets small cards fill the holes left by bigger ones */
+.other-grid {
+    --row-unit: 70px;
+    --gap: 16px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: var(--row-unit);
+    grid-auto-flow: dense;
+    gap: var(--gap);
+    margin-top: 24px;
+}
+
+/* Card = grey rounded frame around the image, title banner on the bottom of the frame */
+.other-card {
+    position: relative;
+    margin: 0;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 22px;
+    background: #3a3a42;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+/* Slight grow on hover, back to normal when the mouse leaves */
+.other-card:hover {
+    transform: scale(1.04);
+    z-index: 1;
+}
+
+.other-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Banner placed over the bottom of the frame (smaller than the image part) */
+.other-card__title {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 0 0 15px 15px;
+    background: rgba(20, 20, 24, 0.75);
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Sizes: span columns x rows */
+.other-card--small { grid-column: span 1; grid-row: span 3; }
+.other-card--wide  { grid-column: span 2; grid-row: span 3; }
+.other-card--tall  { grid-column: span 1; grid-row: span 5; }
+.other-card--big   { grid-column: span 2; grid-row: span 5; }
+
+/* ---------- Viewer (gallery) ---------- */
+.other-viewer {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.other-viewer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border-radius: 22px;
+    background: #3a3a42;
+}
+
+/* Enlarged but not full screen */
+.other-viewer__img {
+    max-width: 60vw;
+    max-height: 60vh;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.other-viewer__title {
+    margin: 12px 0 0;
+    color: #fff;
+}
+
+.other-viewer__arrow {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.other-viewer__arrow:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Smaller screens: arrows go over the image edges */
+@media (max-width: 600px) {
+    .other-viewer__img {
+        max-width: 80vw;
+    }
+
+    .other-viewer__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .other-viewer__arrow--left { left: 8px; }
+    .other-viewer__arrow--right { right: 8px; }
+}
